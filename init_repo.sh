@@ -2,13 +2,11 @@
 
 cat "./bem_vindo.txt"
 
-root_folder="./"
 engineering_folder="engenharia_dados"
 data_analytics_folder="data_analytics"
 
 list_options_general=("Criar estrutura para este repositorio" "Utilizar estrutura existente" "Sair")
 list_options_team=("Engenharia" "Data Analytics" "Sair")
-# list_options_paths=("Novo experimento","Novo Projeto","Adhoc analysis","Sair")
 list_options_paths_eng=("Projetos" "Automatizacoes" "Sair")
 list_options_paths_da=("Projetos" "Experimentos" "Sair")
 
@@ -98,12 +96,10 @@ do
     do 
         case $team_option in 
         "Engenharia")
-        # echo "voce escolheu o time de $team_option "
         pattern_folder $team_option
         break
         ;;
         "Data Analytics")
-        # $team="Data Analytics"
         pattern_folder $team_option
         break
         ;;
